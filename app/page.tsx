@@ -1,16 +1,23 @@
-import ScrollyCanvas from "@/components/ScrollyCanvas";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
-import Experience from "@/components/Experience";
+import FeaturedProjects from "@/components/FeaturedProjects";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="bg-[#121212] min-h-screen">
-      <ScrollyCanvas />
-      <Experience />
+    <main>
+      <Navbar />
+      <Hero />
+      <About />
+      <Skills />
       <Projects />
-      <footer className="py-12 text-center text-gray-500 text-sm">
-        © {new Date().getFullYear()} Rajesh Chityal.
-      </footer>
+      <FeaturedProjects />
+      <Contact />
+      <Footer />
     </main>
   );
 }
